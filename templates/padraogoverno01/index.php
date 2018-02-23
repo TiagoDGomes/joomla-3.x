@@ -46,6 +46,7 @@ $active_item = TmplPadraoGoverno01Helper::getActiveItemid();
     <?php if(TmplPadraoGoverno01Helper::afterHead('local_mainscript', $this)) TmplPadraoGoverno01Helper::getTemplateMainScripts( $this ); ?>
     <?php TmplPadraoGoverno01Helper::getFontStyle( $this ); ?>
 
+    <link rel="stylesheet" href="<?php echo $this->baseurl; ?>/templates/<?php echo $this->template; ?>/css/personalizado.css" />
 </head>
 <body <?php echo TmplPadraoGoverno01Helper::getPageClass( $active_item, false, true ); ?>>
     <a class="hide" id="topo" href="#accessibility">Ir direto para menu de acessibilidade.</a>

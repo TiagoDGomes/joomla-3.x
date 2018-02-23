@@ -1,0 +1,54 @@
+.item-page p, .container #content{
+  text-align: justify;  
+  line-height: 24.5px !important;
+}
+.container #content h2, .tileItem{
+  text-align: initial;
+}
+.container #content p, .container #content li, .container #content dl {
+  font-size: 14px !important;
+  font-family: "open_sansregular",'Open Sans',Arial,Helvetica,sans-serif !important;  
+}
+
+
+
+ol[type="a"],
+ol[type="a"] li,
+#content.internas ol[type="a"],
+#content.internas ol[type="a"] li
+{
+  list-style-type: lower-alpha !important;
+  list-style: lower-alpha outside!important;
+  
+}
+#content.internas ul li {
+  list-style: initial !important;
+  
+}
+
+
+/* Marcadores das datas em que os artigos tiveram atualizacao*/
+section .data-artigo-revisao{
+  border-top: 1px solid rgb(232, 231, 231);
+}
+
+.data-artigo-revisao{
+  color: #1e68d0;
+  margin: 3em 0 1em 0!important;
+  padding: 3px 0 0 3px;
+  font-size: 0.9em; 
+  background-color: rgb(242, 241, 241);
+}
+
+.data-artigo-revisao em{
+  font-style: normal;
+}
+
+
+/* Pagina de servidores */
+.contact .subtitle .contact-name{
+  font-size: 1em !important;
+  font-weight: bold !important;
+}
+
+
