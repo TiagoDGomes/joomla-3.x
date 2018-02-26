@@ -55,7 +55,7 @@ class TmplPadraoGoverno01Helper
 		$user = JFactory::getUser();
 
 		if ($clear_default_javascript == 1 && $user->guest == 1) {
-	 		unset($new_scripts[$tmpl->baseurl.'/media/system/js/mootools-core.js']);
+	 		//unset($new_scripts[$tmpl->baseurl.'/media/system/js/mootools-core.js']);
 			unset($new_scripts[$tmpl->baseurl.'/media/system/js/core.js']);
 			unset($new_scripts[$tmpl->baseurl.'/media/system/js/caption.js']);        
 
@@ -130,9 +130,11 @@ class TmplPadraoGoverno01Helper
 	static function getTemplateMainScripts( &$tmpl )
 	{
 		?>
+       
 		<script src="<?php echo $tmpl->baseurl; ?>/templates/<?php echo $tmpl->template; ?>/bootstrap/js/bootstrap.min.js" type="text/javascript"></script><noscript>&nbsp;<!-- item para fins de acessibilidade --></noscript>
 	    <script src="<?php echo $tmpl->baseurl; ?>/templates/<?php echo $tmpl->template; ?>/js/jquery.cookie.js" type="text/javascript"></script><noscript>&nbsp;<!-- item para fins de acessibilidade --></noscript>
 	    <script src="<?php echo $tmpl->baseurl; ?>/templates/<?php echo $tmpl->template; ?>/js/template.js" type="text/javascript"></script><noscript>&nbsp;<!-- item para fins de acessibilidade --></noscript>
+        
 		<?php
 	}
 
